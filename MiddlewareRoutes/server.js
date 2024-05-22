@@ -18,6 +18,10 @@ app.get ('/', (req,res, next ) =>{
  </div>`);
 });
 
+app.put('/', (req, res) => {
+    res.send("PUT Request Called")
+})
+
 app.listen(PORT, ()=>{
     console.log(`server is running at ${PORT}`);
 })
