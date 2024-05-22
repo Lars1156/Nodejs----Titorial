@@ -3,6 +3,11 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+app.use( function(req, res,next){
+    console.log("Middle--ware is running");
+    next();
+})
+
 app.get ('/', (req,res, next ) =>{
     console.log('Hello server is running ');
     next();
