@@ -19,5 +19,5 @@ async function insertData(data){
         await client.close();
     }
 }
-const myData ={name:"Jone Doe",age:30 , address:"Hinjawadi Phase one "};
+const myData ={name:"Jone Doe",age:30 , address:"Hinjawadi Phase one ",email:"kishan1156@gmail.com"};
 insertData(myData);
